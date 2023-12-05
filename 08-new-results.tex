@@ -1,0 +1,211 @@
+
+
+% [doc] -----------------------------
+% [doc] Instructions
+% [doc] -----------------------------
+% [doc] https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/RADAR/Structure-du-rapport.
+% [doc] Nouveauté 2022 :
+% [doc] Dans cette partie vous pouvez mettre l'accent sur des projets en lien avec les données de la recherche :
+% [doc] la création ou la manipulation des corpus importants de données. Il peut s'agit de données d'observation, d'expérimentation,
+% [doc] de données computationnelles, compilées, dérivées etc. ...
+% [doc] N'hésitez-pas à citer, grâce aux liens DOI, les jeux de données partagés via les entrepôts comme p.ex. :
+% [doc] Zenodo (https://zenodo.org/), Recherche Data Gouv (https://entrepot.recherche.data.gouv.fr/) ou d'autres réservoirs.
+% [doc] Exemple de liens: \href{https://doi.org/10.5281/zenodo.7254826}{Primitive quartic number fields of absolute discriminant at most $10^9$}
+% [doc] -----------------------------
+
+%% [BEGIN last year imported content]
+
+
+
+
+
+
+% [radar] -----------------------------------
+% [radar] Do not alter this section title
+\section{New results}
+\label{diverse:results}
+% [radar] -----------------------------------
+
+
+
+%% ---------------------------------------
+\subsection{Results for Axis \#1: Software Language Engineering}
+\label{resultats:results-axis1}
+%% ---------------------------------------
+
+
+\begin{participants}
+\pers{Olivier}{Barais}
+\pers{Johann}{Bourcier}
+\pers{Benoît}{Combemale}
+\pers{Jean-Marc}{Jézéquel}
+\pers{Gurvan}{Leguernic}
+\pers{Gunter}{Mussbacher}
+\pers{Noël}{Plouzeau}
+\pers{Didier}{Vojtisek}
+\end{participants}
+
+\subsubsection{Foundations of Software Language Engineering}
+
+Exploratory programming is a software development style in which code is a medium for prototyping ideas and solutions, and in which even the end-goal can evolve over time. Exploratory programming is valuable in various contexts, such as programming education, data science, and end-user programming. However, there is a lack of appropriate tooling and language design principles to support exploratory programming. In \cite{vanbinsbergen:hal-03921387}, we present a host language- and object language-independent protocol for exploratory programming akin to the Language Server Protocol. The protocol serves as a basis to develop novel programming environments (or to extend existing ones) for exploratory programming, such as computational notebooks and command-line REPLs. An architecture is exposed, on top of which prototype environments can be developed with relative ease, because existing (language) components can be reused. Our prototypes demonstrate that the proposed protocol is sufficiently expressive to support exploratory programming scenarios as encountered in literature of the software engineering, human-computer interaction and data science domains.
+
+Recent results in language engineering simplify the development of tool-supported executable domain-specific modelling languages (xDSMLs), including editing (e.g., completion and error checking) and execution analysis tools (e.g., debugging, monitoring and live modelling). However, such frameworks are currently limited to sequential execution traces, and cannot handle execution traces resulting from an execution semantics with a concurrency model supporting parallelism or interleaving. This prevents the development of concurrency analysis tools, like debuggers supporting the exploration of model executions resulting from different interleavings. In~\cite{zschaler:hal-03921704}, we present a generic framework to integrate execution semantics with either implicit or explicit concurrency models, to explore the possible execution traces of conforming models, and to define strategies to help in the exploration of the possible executions. This framework is complemented with a protocol to interact with the resulting executions and hence to build advanced concurrency analysis tools. The approach has been implemented within the GEMOC Studio. We demonstrate how to integrate two representative concurrent meta-programming approaches (MoCCML/Java and Henshin), which use different paradigms and underlying foundations to define an xDSML's concurrency model. We also demonstrate the ability to define an advanced concurrent omniscient debugger with the proposed protocol. Our work, thus, contributes key abstractions and an associated protocol for integrating concurrent meta-pro\-gram\-ming approaches in a language workbench, and dynamically exploring the possible executions of a model in the modelling workbench.
+
+\subsubsection{DSL for Scientific Computing}
+
+Scientific software are complex software systems. Their engineering involves various stakeholders using specific computer languages for defining artifacts at different abstraction levels and for different purposes. In~\cite{leroy:hal-03799289}, we review the overall process leading to the development of scientific software, and discuss the role of computer languages in the definition of the different artifacts. We then provide guidelines to make informed decisions when the time comes to choose the computer languages to use when developing scientific software.
+
+
+%------------------------
+\subsubsection{Digital Twins}
+
+Digital twins are a very promising avenue to design secure and resilient architectures and systems.
+
+In \cite{eramo:hal-03466396}, we study \textbf{Conceptualizing Digital Twins}.
+              Digital Twins are an emerging concept which is gaining importance in several fields. It refers to a comprehensive software representation of an actual system, which includes structures, properties, conditions, behaviours, history and possible futures of that system through models and data to be continuously synchronized. Digital Twins can be built for different purposes, such as for the design, development, analysis, simulation, and operations of non-digital systems in order to understand, monitor, and/or optimize the actual system. To realize Digital Twins, data and models originated from diverse engineering disciplines have to be integrated, synchronized, and managed to leverage the benefits provided by software (digital) technologies. However, properly arranging the different models, data sources, and their relations to engineer Digital Twins is challenging. We therefore propose a conceptual modeling framework for Digital Twins that captures the combined usage of heterogeneous models and their respective evolving data for the twin's entire life cycle. 
+              
+              
+We also created EDT.Community, a programme of seminars on the engineering of digital twins hosting digital twins experts from academia and industry. In~\cite{cleophas:hal-03933973}, we report on the main topics of discussion from the first year of the programme. We contribute by providing (1)~a common understanding of open challenges in research and practice of the engineering of digital twins, and (2)~an entry point to researchers who aim at closing gaps in the current state of the art.    
+
+\subsubsection{Reasoning over Time into Models}
+
+Models at runtime have been initially investigated for adaptive systems. Models are used as a reflective layer of the current state of the system to support the implementation of a feedback loop. More recently, models at runtime have also been identified as key for supporting the development of full-fledged digital twins. However, this use of models at runtime raises new challenges, such as the ability to seamlessly interact with the past, present and future states of the system. In~\cite{lyan:hal-03921928}, we propose a framework called DataTime to implement models at runtime that capture the state of the system according to the dimensions of both time and space, here modeled as a directed graph where both nodes and edges bear local states (ie. values of properties of interest). DataTime offers a unifying interface to query the past, present and future (predicted) states of the system. This unifying interface provides i)~an optimized structure of the time series that capture the past states of the system, possibly evolving over time, ii)~the ability to get the last available value provided by the system's sensors, and iii)~a continuous micro-learning over graph edges of a predictive model to make it possible to query future states, either locally or more globally, thanks to a composition law. The framework has been developed and evaluated in the context of the Intelligent Public Transportation Systems of the city of Rennes (France). This experimentation has demonstrated how DataTime can be used for managing data from the past, the present and the future, and facilitate the development of digital twins.             
+
+%% ---------------------------------------
+\subsection{Results for Axis \#2: Spatio-temporal Variability in Software and Systems}
+\label{resultats:results-axis2}
+%% ---------------------------------------
+
+\begin{participants}
+% Mathieu Acher  + Djamel
+
+\pers{Mathieu}{Acher}
+\pers{Arnaud}{Blouin}
+\pers{Benoît}{Combemale}
+\pers{Jean-Marc}{Jézéquel}
+\pers{Djamel}{Eddine Khelladi}
+\pers{Olivier}{Zendra}
+%\noindent \textbf{Postdocs:} X. Ternava 
+%\noindent \textbf{PhD students:} L. Lesoil, H. Martin, Georges Aaron RANDRIANAINA
+
+\end{participants}
+
+\subsubsection{Learning at scale}
+
+\emph{Learning large-scale variability}
+In~\cite{acher:hal-03720273}, we apply learning techniques to the Linux kernel. 
+With now more than 15,000 configuration options, including more than 9,000 just for the x86 architecture, the Linux kernel is one of the most complex configurable open-source systems ever developed. If all these options were binary and independent, that would indeed yield $2^{15000}$ possible variants of the kernel. Of course not all options are independent (leading to fewer possible variants), but some of them have tri-states values: yes, no, or module instead of simply boolean values (leading to more possible variants). 
+The Linux kernel is mentioned in numerous papers on configurable systems and machine learning, as motivating example stating the problem and the underlying approach. 
+However, only a few works truly explore such a huge configuration space. In this line of work, we take up the Linux challenge either for configurations' bug prevention or for predicting the binary size of a configured kernel. We also design a learning technique capable of transferring a prediction model among \textbf{variants and versions} of Linux~\cite{martin:hal-03358817}. 
+
+Linux kernels are used in a wide variety of appliances, many of them having strong requirements on the kernel size due to constraints such as limited memory or instant boot. With more than nine thousands of configuration options to choose from, developers and users of Linux actually spend significant effort to document, understand, and eventually tune (combinations of) options for meeting a kernel size. In~\cite{acher:hal-03720273}, we describe a large-scale endeavour automating this task and predicting a given Linux kernel binary size out of unmeasured configurations. We first experiment that state-of-the-art solutions specifically made for configurable systems such as performance-influence models cannot cope with that number of options, suggesting that software product line techniques may need to be adapted to such huge configuration spaces. We then show that tree-based feature selection can learn a model achieving low prediction errors over a reduced set of options. The resulting model, trained on 95,854 kernel configurations, is quick to compute, simple to interpret and even outperforms the accuracy of learning without feature selection. 
+
+\subsubsection{Smart build}
+
+\emph{Incremental build of configurations and variants} Building software is a crucial task to compile, test, and deploy software systems while continuously ensuring quality. As software is more and more configurable, building multiple configurations is a pressing need, yet, costly and challenging to instrument. The common practice is to independently build (a.k.a., clean build) a software for a subset of configurations. While incremental build has been considered for software evolution and relatively small modifications of the source code, it has surprisingly not been considered for software configurations. In this work, we formulate the hypothesis that incremental build can reduce the cost of exploring the configuration space of software systems. In~\cite{randrianaina:hal-03558479}, we detail how we apply \textbf{incremental build} for two real-world application scenarios and conduct a preliminary evaluation on two case studies, namely x264 and the Linux Kernel. For x264, we found that one can incrementally build configurations in an order such that overall build time is reduced. Nevertheless, we could not find any optimal order with the Linux Kernel, due to a high distance between random configurations. Therefore, we show it is possible to control the process of generating configurations: we could reuse commonality and gain up to 66\% of build time compared to only clean builds.
+
+ In the exploratory study~\cite{randrianaina:hal-03547219}, we examine the benefits and limits of building software configurations incrementally, rather than always building them cleanly. By using five real-life configurable systems as subjects, we explore whether incremental build works, outperforms a sequence of clean builds, is correct w.r.t. clean build, and can be used to find an optimal ordering for building configurations. Our results show that incremental build is feasible in 100\% of the times in four subjects and in 78\% of the times in one subject. In average, 88.5\% of the configurations could be built faster with incremental build while also finding several alternatives faster incremental builds. However, only 60\% of faster incremental builds are correct. Still, when considering those correct incremental builds with clean builds, we could always find an optimal order that is faster than just a collection of clean builds with a gain up to 11.76\%. 
+
+\subsubsection{Variability and debloating}
+
+\emph{Debloating variability} In~\cite{acher:hal-03882594}, we call for \textbf{removing variability}. Indeed, software variability is largely accepted and explored in software engineering and seems to have become a norm and a must, if only in the context of product lines. Yet, the removal of superfluous or unneeded software artefacts and functionalities is an inevitable trend. It is frequently investigated in relation to software bloat. This work is essentially a call to the community on software variability to devise methods and tools that will facilitate the removal of unneeded variability from software systems. The advantages are expected to be numerous in terms of functional and non-functional properties, such as maintainability (lower complexity), security (smaller attack surface), reliability, and performance (smaller binaries).
+
+\emph{Feature toggling and variability} Feature toggling is a technique for enabling branching-in-code. It is increasingly used during continuous deployment to incrementally test and integrate new features before their release. In principle, feature toggles tend to be light, that is, they are defined as simple Boolean flags and used in conditional statements to condition the activation of some software features. However, there is a lack of knowledge on whether and how they may interact with each other, in that case their enabling and testing become complex. We argue that finding the interactions of feature toggles is valuable for developers to know which of them should be enabled at the same time, which are impacted by a removed toggle, and to avoid their misconfigurations. In~\cite{ternava:hal-03527250}, we mine feature toggles and their interactions in five open-source projects. We then analyse how they are realized and whether they tend to be multiplied over time. Our results show that 7\% of feature toggles interact with each other, 33\% of them interact with another code expression, and their interactions tend to increase over time (22\%, on average). Further, their interactions are expressed by simple logical operators (i.e., and and or) and nested if statements. We propose to model them into a Feature Toggle Model, and believe that our results are helpful towards robust management approaches of feature toggles.
+
+Several works have already identified the proximity of feature toggles with the notion of Feature found in Software Product Lines. In~\cite{jezequel:hal-03788437}, we propose to go one step further in unifying these concepts to provide a seamless transition between design time and runtime variability resolutions. 
+We show how it can scale to build a configurable authentication system, where a partially resolved feature model can interface with popular feature toggle frameworks such as Togglz.
+
+
+\emph{Gadgets and variability} Numerous software systems are configurable through compile-time options and the widely used ./configure. However, the combined effects of these options on binaries' non-functional properties size and attack surface are often not documented, and or not well understood, even by experts. Our goal is to provide automated support for exploring and comprehending the configuration space a. k. a., surface of compile-time options using statistical learning techniques. In~\cite{ternava:hal-03627246}, we perform an empirical study on four C-based configurable systems. Our results show that, by changing the default configuration, the system's binary size and gadgets vary greatly (roughly -79\% to 244\% and -77\% to 30\%, respectively). Then, we found out that identifying the most influential options can be accurately learned with a small training set, while their relative importance varies across size and attack surface for the same system. Practitioners can use our approach and artifacts to explore the effects of compile-time options in order to take informed decisions when configuring a system with ./configure. Our work received the Best paper award at ICSR 2022.
+
+\subsubsection{Scaling temporal analysis}
+
+ \emph{Temporal code analysis at scale} Syntax Trees (ASTs) are widely used beyond compilers in many tools that measure and improve code quality, such as code analysis, bug detection, mining code metrics, refactoring. With the advent of fast software evolution and multistage releases, the temporal analysis of an AST history is becoming useful to understand and maintain code. However, jointly analyzing thousands of versions of ASTs independently faces scalability issues, mostly combinatorial, both in terms of memory and CPU usage. In~\cite{ledilavrec:hal-03764541}, we propose a novel type of AST, called HyperAST , that enables efficient temporal code analysis on a given software history by: 1)~leveraging code redundancy through space (between code elements) and time (between versions); 2)~reusing intermediate computation results. We show how the HyperAST can be built incrementally on a set of commits to capture all multiple ASTs at once in an optimized way. We evaluated the HyperAST on a curated list of large software projects. Compared to Spoon, a state-of-the-art technique, we observed that the HyperAST outperforms it with an order-of-magnitude difference from~×6 up to~×8076 in CPU construction time and from~×12 up to~×1159 in memory footprint. While the HyperAST requires up to 2~h~22~min and 7.2~GB for the largest project, Spoon requires up to 93~h~31~min and 2.2~TB. The gains in construction time varied from 83.4\% to 99\%.99\% and the gains in memory footprint varied from 91.8\% to 99.9\%. We further compared the task of finding references of declarations with the HyperAST and Spoon. We observed on average 90\% precision and 97\% recall without a significant difference in search time. 
+ 
+ \subsubsection{Deep variability}
+ 
+ Deep software variability refers to the interaction of all external layers modifying the behavior of software. Configuring software is a powerful means to reach functional and performance goals of a system, but many layers of variability can make this difficult.
+ 
+\emph{Variability in input, version, and software.} With commits and releases, hundreds of tests are run on varying conditions (e.g., over different hardware and workloads) that can help to understand evolution and ensure non-regression of software performance. In~\cite{lesoil:hal-03624309}, we hypothesize that performance is not only sensitive to evolution of software, but also to different variability layers of its execution environment, spanning the hardware, the operating system, the build, or the workload processed by the software. Leveraging the MongoDB dataset, our results show that changes in hardware and workload can drastically impact performance evolution and thus should be taken into account when reasoning about evolution. An open problem resulting from this study is how to manage the variability layers in order to efficiently test the performance evolution of a software.
+ 
+ \emph{Transferring Performance between Distinct Configurable Systems.} Many research studies predict the performance of configurable software using machine learning techniques, thus requiring large amounts of data. Transfer learning aims at reducing the amount of data needed to train these models and has been successfully applied on different executing environments (hardware) or software versions.  In~\cite{lesoil:hal-03514984}, we investigate for the first time the idea of applying transfer learning between distinct configurable systems. We design a study involving two video encoders (namely x264 and x265) coming from different code bases. Our results are encouraging since transfer learning outperforms traditional learning for two performance properties (out of three). We discuss the open challenges to overcome for a more general application. 
+  
+  
+ \emph{Global Decision Making Over \textbf{Deep Variability} in Feedback-Driven Software Development}
+ To succeed with the development of modern software, organizations must have the agility to adapt faster to constantly evolving environments to deliver more reliable and optimized solutions that can be adapted to the needs and environments of their stakeholders including users, customers, business, development, and IT. However, stakeholders do not have sufficient automated support for global decision making, considering the increasing variability of the solution space, the frequent lack of explicit representation of its associated variability and decision points, and the uncertainty of the impact of decisions on stakeholders and the solution space. This leads to an ad-hoc decision making process that is slow, error-prone, and often favors local knowledge over global, organization-wide objectives. The Multi-Plane Models and Data (MP-MODA) framework introduced in~\cite{kienzle:hal-03770004} explicitly represents and manages variability, impacts, and decision points. It enables automation and tool support in aid of a multi-criteria decision making process involving different stakeholders within a feedback-driven software development process where feedback cycles aim to reduce uncertainty. We present the conceptual structure of the framework, discuss its potential benefits, and enumerate key challenges related to tool supported automation and analysis within MP-MODA.
+ 
+  \emph{Reproducibility} We sketch a vision about \textbf{reproducible science} and deep software variability in~\cite{acher:hal-03528889}. 
+ 
+ 
+ 
+% In~\cite{BURST}, we present BURST, a benchmarking platform for uniform random sampling techniques. With BURST, researchers have a flexible, controlled environment in which they can evaluate the scalability and uniformity of their sampling. BURST comes with an extensive --- and extensible --- benchmark dataset comprising 128 feature models, including challenging, real-world models of the Linux kernel. BURST takes as inputs a sampling tool, a set of feature models and a sampling budget. It automatically translates any feature model of the set in DIMACS and invokes the sampling tool to generate the budgeted number of samples. To evaluate the scalability of the sampling tool, BURST measures the time the tool needs to produce the requested sample. To evaluate the uniformity of the produced sample, BURST integrates the state-of-the-art and proven statistical test Barbarik. We envision BURST to become the starting point of a standardisation initiative of sampling tool evaluation. Given the huge interest of research for sampling algorithms and tools, this initiative would have the potential to reach and crosscut multiple research communities including AI, ML, SAT and SPL.
+
+
+% \textbf{Projects.} We are currently exploring the use of machine learning for variability-intensive systems in the context of  \href{https://varyvary.github.io}{VaryVary ANR project}. The SLIMFAST project aims to debloat variability and specialize configuration space.  
+
+% \textbf{PhD soutenance} Hugo Martin succesfully defended his PhD thesis entitled "Machine Learning for Performance Modelling on Colossal Software Configuration Spaces"
+
+% \textbf{HDR soutenance} Mathieu Acher succesfully defended his HDR entitled "Modelling, Reverse Engineering, and Learning Software Variability"
+
+
+
+%% ---------------------------------------
+\subsection{Results for Axis \#3: DevSecOps and Resilience Engineering for Software and Systems}
+\label{resultats:results-axis3}
+%% ---------------------------------------
+
+
+\begin{participants}
+\pers{Mathieu}{Acher}
+\pers{Olivier}{Barais}
+\pers{Arnaud}{Blouin}
+\pers{Stephanie}{Challita}
+\pers{Benoît}{Combemale}
+\pers{Jean-Marc}{Jézéquel}
+\pers{Olivier}{Zendra}
+\end{participants}
+
+% The work done in 2021 for axis~\#3 draws from previous works in software engineering and security from both DiverSE and the former TAMIS team.
+% The first area of investigation deals with microservices, seen as a mean to increase maintainability, security and resilience.
+
+In this section, we present our achievements for 2022 that draw on our previous works, and that constitute basic blocks upon which we will continue building our research and systems, for example with the aim to extend the applicability to secure supply chains.
+
+       
+
+%------------------------
+\subsubsection{Side-channels and source-code vulnerabilities}
+
+We also worked on methods and techniques to improve the cybersecurity of code by removing cyber-vulnerabilities from source-codes, especially the ones enabling side-channels attacks.
+
+In~\cite{brown:hal-03805561}, we indeed try to address the specific type of cyber attacks known as side channel attacks, where attackers exploit information leakage from the physical execution of a program, e.g. timing or power leakage, to uncover secret information, such as encryption keys or other sensitive data. There have been various attempts at addressing the problem of preventing side-channel attacks, often relying on various measures to decrease the discernibility of several code variants or code paths. Most techniques require a high-degree of expertise by the developer, who often employs ad hoc, hand-crafted code-patching in an attempt to make it more secure. In this work, we take a different approach, building on the idea of ladderisation, inspired by Montgomery Ladders. We present \textbf{a semi-automatic tool-supported technique to provide countermeasures to side-channel attacks}. Our technique, aimed at the non-specialised developer, which refactors (a class of) C programs into functionally (and even algorithmically) equivalent counterparts with improved security properties. Our approach provides refactorings that transform the source code into its ladderised equivalent, driven by an underlying verified rewrite system, based on dependent types. Our rewrite system automatically finds rewritings of selected C expressions, facilitating the production of their equivalent ladderised counterparts for a subset of C. We demonstrated our approach on a number of representative examples from the cryptographic domain, showing increased security. 
+
+Side-channel attacks are  by definition made possible by information leaking from computing systems through nonfunctional properties like execution time, consumed energy, power profiles, etc. These attacks are especially difficult to protect from, since they rely on physical measurements not usually envisioned when designing the functional properties of a program. Furthermore, countermeasures are usually dedicated to protect a particular program against a particular attack, lacking universality. To help fight these threats, we propose in~\cite{marquer:hal-03793085}~ \textbf{the Indiscernibility Methodology}, a novel methodology to quantify with no prior knowledge the information leaked from programs, thus providing the developer with valuable security metrics, derived either from topology or from information theory. Our original approach considers the code to be analyzed as a completely black box, only the public inputs and leakages being observed. It can be applied to various types of side-channel leakages: time, energy, power, EM, etc. In this work, we first present our Indiscernibility Methodology, including channels of information and our threat model. We then detail the computation of our novel metrics, with strong formal foundations based both on topological security (with distances defined between secret-dependent observations) and on information theory (quantifying the remaining secret information after observation by the attacker). Then we demonstrate the applicability of our approach by providing experimental results for both time and power leakages, studying both average case, worst case, and indiscernible information metrics.
+
+
+%------------------------
+\subsubsection{Malware analysis and classification}
+
+
+Historically, malware (MW) analysis has heavily resorted to human savvy for manual signature creation to detect and classify malware. This procedure is very costly and time consuming, thus unable to cope with modern cyber threat scenario. The solution is to widely automate malware analysis. Toward this goal, malware classification allows optimizing the handling of large malware corpora by identifying resemblances across similar instances. Consequently, malware classification figures as a key activity related to malware analysis, which is paramount in the operation of computer security as a whole. In this line of research work, the PhD thesis~\cite{puodzius:tel-03935152} addresses the problem of malware classification taking an approach in which human intervention is spared as much as possible. There, we steer clear of subjectivity inherent to human analysis by designing malware classification solely on data directly extracted from malware analysis, thus taking a data-driven approach. Our objective was to improve the automation of malware analysis and to combine it with machine learning methods that are able to autonomously spot and reveal unwitting commonalities within data. This worked was phased in three stages. Initially we focused on improving malware analysis and its automation, studying new ways of leveraging symbolic execution in malware analysis and developing a distributed framework to scale up our computational power. Then we focused on the representation of malware behavior, with painstaking attention to its accuracy and robustness. Finally, we fixed attention on malware clustering, devising a methodology that has no restriction in the combination of syntactical and behavioral features and remains scalable in practice. The main contributions of this work are: revamping the use of symbolic execution for malware analysis with special attention to the optimal use of SMT solver tactics and hyperparameter settings; conceiving a new evaluation paradigm for malware analysis systems; formulating a compact graph representation of behavior, along with a corresponding function for pairwise similarity computation, which is accurate and robust; and elaborating a new malware clustering strategy based on ensemble clustering that is flexible with respect to the combination of syntactical and behavioral features.
+
+%-
+\subsubsection{Open-source software supply chain security}
+
+
+Open-source software supply chain attacks aim at infecting downstream users by poisoning open-source packages. The common way of consuming such artifacts is through package repositories and the development of vetting strategies to detect such attacks is ongoing research. Despite its popularity, the Java ecosystem is the less explored one in the context of supply chain attacks. In this work~\cite{ladisa:hal-03921362}, we study simple-yet-effective indicators of malicious behavior that can be observed statically through the analysis of Java bytecode. Then we evaluate how such indicators and their combinations perform when detecting malicious code injections. We do so by injecting three malicious payloads taken from real-world examples into the Top-10 most popular Java libraries from libraries.io. We found that the analysis of strings in the constant pool and of sensitive APIs in the bytecode instructions aids in the task of detecting malicious Java packages by significantly reducing the information, thus, making also manual triage possible.
+
+
+In this context of Supply chain attacks on open-source projects, recent work systematized the knowledge about such attacks and proposed a taxonomy in the form of an attack tree~\footcite{snp23ladisa}. We propose a visualization tool called Risk Explorer~\cite{ladisa:hal-03921373} for Software Supply Chains, which allows inspecting the taxonomy of attack vectors, their descriptions, references to real-world incidents and other literature, as well as information about associated safeguards. Being open-source itself, the community can easily reference new attacks, accommodate for entirely new attack vectors or reflect the development of new safeguards. This tool is also available online~\footnote{\href{https://sap.github.io/risk-explorer-for-software-supply-chains/}{Risk explorer web site}}
+
+
+\subsubsection{A Context-Driven Modelling Framework for Dynamic Authentication Decisions}
+
+Nowadays, many mechanisms exist to perform authentication, such as text passwords and biometrics. However, reasoning about their relevance (e.g., the appropriateness for security and usability) regarding the contextual situation is challenging for authentication system designers. In~\cite{bumiller:hal-03729080}, we present a Context-driven Modelling Framework for dynamic Authentication decisions (COFRA), where the context information specifies the relevance of authentication mechanisms. COFRA is based on a precise metamodel that reveals framework abstractions and a set of constraints that specify their meaning. Therefore, it provides a language to determine the relevant authentication mechanisms (characterized by properties that ensure their appropriateness) in a given context. The framework supports the adaptive authentication system designers in the complex trade-off analysis between context information, risks and authentication mechanisms, according to usability, deployability, security, and privacy. We validate the proposed framework through case studies and extensive exchanges with authentication and modelling experts. We show that model instances describing real-world use cases and authentication approaches proposed in the literature can be instantiated validly according to our metamodel. This validation highlights the necessity, sufficiency, and soundness of our framework.
+
+
+In many situations, it is of interest for authentication systems to adapt to context (e.g., when the user's behavior differs from the previous behavior). Hence, during authentication events, it is common to use contextually available features to calculate an impersonation risk score. This work proposes an explainability model~\cite{bumiller:hal-03789500} that can be used for authentication decisions and, in particular, to explain the impersonation risks that arise during suspicious authentication events (e.g., at unusual times or locations). The model applies Shapley values to understand the context behind the risks. Through a case study on 30,000 real world authentication events, we show that risky and non risky authentication events can be grouped according to similar contextual features, which can explain the risk of impersonation differently and specifically for each authentication event. Hence, explainability models can effectively improve our understanding of impersonation risks. The risky authentication events can be classified according to attack types. The contextual explanations of the impersonation risk can help authentication policymakers and regulators who attempt to provide the right authentication mechanisms, to understand the suspiciousness of an authentication event and the attack type, and hence to choose the suitable authentication mechanism.
+
+
+
+
+%% [END last year imported content]

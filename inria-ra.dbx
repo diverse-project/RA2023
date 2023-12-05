@@ -1,0 +1,7 @@
+\ProvidesFile{inria-ra.dbx}[2020/11/16 datamodel extension for Inria annual report, Inria/DSI/SA]
+% This datamodel includes the 'software' datamodel definition.
+% See 
+\RequireBiber[3]
+\input{software.dbx}
+% inria-ra specific: add hal_id field in name list
+\DeclareDatamodelConstant[type=list]{nameparts}{prefix,family,suffix,given,hal_id}

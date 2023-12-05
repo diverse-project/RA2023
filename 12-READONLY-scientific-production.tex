@@ -1,0 +1,29 @@
+\section{Scientific production}
+\label{diverse:bibliography}
+
+ \nocite{*}
+ % Major publications
+ \printbibliography[title={Major publications}, heading={subbibra}, keyword={majorpublication}]
+ \subsection{Publications of the year}
+ \printbibliography[title={International journals}, heading={subsubbibra}, keyword={yearpublication010}]
+ \printbibliography[title={National journals}, heading={subsubbibra}, keyword={yearpublication020}]
+ \printbibliography[title={Invited conferences}, heading={subsubbibra}, keyword={yearpublication030}]
+ \printbibliography[title={International peer-reviewed conferences}, heading={subsubbibra}, keyword={yearpublication040}]
+ \printbibliography[title={National peer-reviewed Conferences}, heading={subsubbibra}, keyword={yearpublication050}]
+ \printbibliography[title={Conferences without proceedings}, heading={subsubbibra}, keyword={yearpublication060}]
+ \printbibliography[title={Scientific books}, heading={subsubbibra}, keyword={yearpublication070}]
+ \printbibliography[title={Scientific book chapters}, heading={subsubbibra}, keyword={yearpublication080}]
+ \printbibliography[title={Edition (books, proceedings, special issue of a journal)}, heading={subsubbibra}, keyword={yearpublication090}]
+ \printbibliography[title={Doctoral dissertations and habilitation theses}, heading={subsubbibra}, keyword={yearpublication100}]
+ \printbibliography[title={Reports \& preprints}, heading={subsubbibra}, keyword={yearpublication110}]
+ \printbibliography[title={Other scientific publications}, heading={subsubbibra}, keyword={yearpublication120}]
+ \IfFileExists{\rabibyearprod}{%
+ \subsection{Other}
+ \printbibliography[title={Scientific popularization}, heading={subsubbibra}, keyword={yearproduction130}]
+ \printbibliography[title={Educational activities}, heading={subsubbibra}, keyword={yearproduction140}]
+ \printbibliography[title={Patents}, heading={subsubbibra}, keyword={yearproduction150}]
+ \printbibliography[title={Softwares}, heading={subsubbibra}, keyword={yearproduction160}]
+ }{}
+ % Cited Publications
+ \printbibliography[title={Cited publications}, heading={subbibra}, keyword={citedpublication}, category={citedpub}]
+ 
