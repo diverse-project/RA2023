@@ -82,8 +82,9 @@ hyperref]{biblatex}
 \newcommand\RAstatusTeam{\renewcommand{\ra@statusteam}{true}}
 \newcommand\RAteamUrl[1]{\renewcommand{\ra@teamUrl}{#1}}
 \newcommand\RArnsr[1]{\renewcommand{\ra@rnsr}{#1}}
-\newcommand{\RAcri}[1]{\ClassWarning{inria-ra}{\noexpand\RAcri is obsolete, use \noexpand\RAmaincenter instead}\renewcommand{\ra@cri}{#1}}
-\newcommand{\RAcrisec}[1]{\ClassWarning{inria-ra}{\noexpand\RAcrisec is obsolete, use \noexpand\RAsencondarycenter instead.}\renewcommand{\ra@crisec}{#1}}%secondary center
+%% \RAcri and \RAcrisec  shall be hopefully obsolete for 2024
+\newcommand{\RAcri}[1]{\renewcommand{\ra@cri}{#1}}
+\newcommand{\RAcrisec}[1]{\renewcommand{\ra@crisec}{#1}}%secondary center
 % new 2023
 \newcommand\RAmaincenter[2]{\renewcommand{\ra@trigramme}{#1}\renewcommand{\ra@nameMainCenter}{#2}}
 \newcommand\RAsecondarycenter[2]{\renewcommand{\ra@trigramme}{#1}\renewcommand{\ra@nameSecondaryCenter}{#2}}
