@@ -367,9 +367,20 @@ hyperref]{biblatex}
 \DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}
 %% Other (non greek) UNICODE char
 \DeclareUnicodeCharacter{0301}{`}
-\DeclareUnicodeCharacter{2009}{\,}
-\DeclareUnicodeCharacter{2002}{ }%half space
-\DeclareUnicodeCharacter{200B}{}
+%% spaces, see http://hapax.qc.ca/Tableaux-15.0/U2000.pdf for explanation in french.
+\DeclareUnicodeCharacter{2000}{\enspace}% en space.
+\DeclareUnicodeCharacter{2001}{\quad}% em space
+\DeclareUnicodeCharacter{2002}{\enspace}% en space
+\DeclareUnicodeCharacter{2003}{\quad} % em space
+\DeclareUnicodeCharacter{2004}{\;} % 1/3 em space (0.2777em for \;)
+\DeclareUnicodeCharacter{2005}{\:} % 1/4 em space (0.2222em for \:)
+\DeclareUnicodeCharacter{2006}{\,} % 1/6 em space
+\DeclareUnicodeCharacter{2007}{ } % figure space (??)
+\DeclareUnicodeCharacter{2008}{\,} % punctuation space (??)
+\DeclareUnicodeCharacter{2009}{\,} % thin space
+\DeclareUnicodeCharacter{200A}{\,} % ultrathin space
+\DeclareUnicodeCharacter{200B}{} % zero with space (??)
+%
 \DeclareUnicodeCharacter{200E}{} % ctrl LEFT-TO-RIGHT MARK
 \DeclareUnicodeCharacter{202A}{}
 \DeclareUnicodeCharacter{202F}{~}
